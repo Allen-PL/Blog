@@ -130,7 +130,7 @@ WHITE_REGEX_URL_LIST = [
     "/about/",
 ]
 
-
+# 自己私人的信息可以写在一个独立的文件，以导入的形式加载
 try:
     from .local_settings import *
 except ImportError:
