@@ -2,10 +2,7 @@
 这是一个基于Django开发的博客系统，包含前端和后台管理系统，支持Markdown编辑，前端使用了Bootstrap 4，样式简洁，风格类似GitHub。
 
 ## 演示地址
-[demo](http://182.92.99.3)
-
-## 为何开发这款博客
-之前使用过WordPress、Hexo等博客框架，由于功能繁重，样式不喜欢，或Hexo访问速度太慢的原因，所以自己动手写了一款。
+[demo](http://47.102.148.156:8080)
 
 ## 功能列表
 ### 前台
@@ -27,7 +24,7 @@
 ## 如何使用
 
 - 创建虚拟环境保证项目不被污染，并激活
-- 克隆项目：`https://github.com/Eric54920/Blog.git`
+- 克隆项目：`https://github.com/Allen-PL/MyBlog.git`
 - `pip install -r requirement.txt`安装项目所需依赖
 - 修改settings.py配置文件
 ```conf
@@ -92,7 +89,7 @@ SITE_VERIFICATION = {
 
 
 # 版权信息 以下为示例
-COPY_RIGHT = "Copyright © 2017-2021 作者名 All Reversed 备案号"
+COPY_RIGHT = "Copyright © 2018-2020 作者名 All Reversed 备案号"
 ```
 - 初始化数据库
 
@@ -117,4 +114,4 @@ COPY_RIGHT = "Copyright © 2017-2021 作者名 All Reversed 备案号"
 撰写文章时，标题要用h3，也就是`###`，以便于生成目录。
 
 ## 后续
-一些功能还在开发和完善中。
+功能还在开发中。

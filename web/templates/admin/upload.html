@@ -37,7 +37,7 @@
             {% for item in data %}
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card shadow-sm height-215 position-realtive">
-                        <a href="javascript:;" class="bd-placeholder-img card-img-top d-block picture-wrapper shadow-sm text-decoration-none" style="background-image:url({{ item.url|bgimg }})"></a>
+                        <a href="javascript:;" class="bd-placeholder-img card-img-top d-block picture-wrapper shadow-sm text-decoration-none" style="background-image:url({{ item.url }})"></a>
                         <input type="checkbox" class="position-absolute" style="left:10px;top:10px" value="{{ item.pk }}">
                         {% if item.is_show %}
                         <a type="button" class="btn btn-sm btn-warning text-light position-absolute hideIt" data="{{ item.pk }}" style="right:10px;top:10px">隐藏</a>

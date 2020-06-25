@@ -20,9 +20,11 @@ def login(request):
     if form.is_valid():
         username = form.cleaned_data.get('username')
         password = form.cleaned_data.get('password')
+        print(username,password)
+        print(models.User.objects.all().values())
         curr_user = models.User.objects.filter(username=username, password=password).first()
         if not curr_user:
-            form.add_error('username', '用户不存在')
+            form.add_error('username', '用户名或密码错误')
             return render(request, 'admin/login.html', {'form': form})
         request.session['user'] = curr_user.username
         request.session.set_expiry(60 * 60 * 24 * 14)
